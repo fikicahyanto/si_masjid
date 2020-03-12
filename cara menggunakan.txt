@@ -1,0 +1,17 @@
+Yang harus Disiapkan
+-Memiliki CLI/Command Line Interface berupa Command Prompt (CMD) atau Power Shell atau Git Bash (selanjutnya kita sebut terminal).
+-Memiliki Web Server (misal XAMPP) dengan PHP minimal versi 7.2
+-Memiliki koneksi internet (untuk proses installasi Composer).
+
+
+Langkah pengerjaan
+-Extract file .zip (source code) ke dalam direktori htdocs pada XAMPP, misal C:\xampp\htdocs\masjidku.
+-install composer yang ada di dalam composer-Setup.rar. Ini yang perlu koneksi internet.
+-Composer akan menginstall dependency paket dari source code tersebut 
+-tunggu hingga selesai.
+-Composer telah ter-install, cek dengan perintah composer -V Melalui cmd, cd ke direktori masjidku..
+-Jalankan perintah php artisan, untuk menguji apakah perintah artisan Laravel bekerja.
+-import database masjid_db.sql pada mysql (via phpmyadmin).
+-Setelah selesai, buka aplikasi melalui browser, misal : http://localhost/masjidku/public (untuk halaman user)
+-http://localhost/masjidku/public/administrator (untuk halaman admin utama dengan memasukan login Email : fiki@gmail.com dan Password : fiki12345)
+-http://localhost/masjidku/public/keuangan (untuk halaman admin keuangan dengan memasukan login Email : admin@mail.com dan Password : admin123)
